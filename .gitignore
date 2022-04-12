@@ -9,3 +9,6 @@ __py**__
 .history
 supp_assets
 exps
+*.xml
+*.xz
+*.iml
