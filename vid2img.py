@@ -24,7 +24,7 @@ def video_to_images(vid_file, img_folder=None, return_info=False):
     return img_folder
 
 vid_dir = config.InternetData_ROOT
-vid_files = [f for f in os.listdir(vid_dir) if f.endswith('.mp4')]
+vid_files = [os.path.join(vid_dir, f) for f in os.listdir(vid_dir) if f.endswith('.mp4')]
 for vid_file in vid_files:
     forename = osp.basename(vid_file)[:-4]
     print(vid_file)
